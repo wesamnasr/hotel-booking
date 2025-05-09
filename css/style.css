@@ -126,10 +126,10 @@ nav ul li a:hover {
 .hero {
     background: linear-gradient(rgba(15, 14, 14, 0.5), rgba(2, 7, 34, 0.5)), url('../assets/images/slider-7.jpg.webp') no-repeat center center/cover;
     color: var(--light-color);
-    padding: 100px 0 50px;
+    padding: 100px 0 150px; /* Increased bottom padding to make room for search bar */
     text-align: start;
-    height: 70vh;
     position: relative;
+    height: 70vh;
 }
 
 .hero h2 {
@@ -142,24 +142,22 @@ nav ul li a:hover {
     margin-bottom: 30px;
 }
 
-.search-bar{
-    align-items: center;
-    position: absolute;
-    transform: translate(-2.5%,-40%);
+/* Search Bar */
+.search-bar {
     width: 95%;
-    opacity: 1;
-    
+    margin: 0 auto;
+    position: relative;
+    margin-top: -75px; /* Move up to overlap with hero section */
+    margin-bottom: 50px; /* Add space below search bar */
+    z-index: 10; /* Ensure it's above other content */
 }
 
 .search-box {
-
-    
     width: 100%;
     background-color: var(--light-color);
     border-radius: 8px;
     padding: 25px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    margin-top: 30px;
 }
 
 .search-row {
@@ -195,9 +193,9 @@ nav ul li a:hover {
     font-size: 1rem;
 }
 
-/* Featured Hotels */
+/* Featured Hotels - adjust top padding */
 .featured-hotels {
-    padding: 120px 0;
+    padding: 50px 0 80px; /* Reduced top padding */
     background-color: var(--gray-color);
 }
 
@@ -622,3 +620,171 @@ footer {
 .social-icons {
     margin-top: 15px;
 }
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Apply animations to elements */
+.hero h2 {
+    animation: slideInRight 1s ease-out;
+}
+
+.hero p {
+    animation: slideInRight 1s ease-out 0.3s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.search-box {
+    animation: fadeIn 1s ease-out 0.6s forwards;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.section-title {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-color);
+    transition: all 0.8s ease;
+    transform: translateX(-50%);
+}
+
+.section-title.animate::after {
+    width: 100px;
+}
+
+.hotel-card, .offer-card, .event-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hotel-card:hover, .offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.event-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    height: 100%;
+}
+
+.testimonial-card {
+    transition: all 0.5s ease;
+}
+
+.testimonial-card.active {
+    transform: scale(1.03);
+}
+
+.quote-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.offer-badge {
+    animation: pulse 2s infinite;
+}
+
+.event-date {
+    transition: all 0.3s ease;
+}
+
+.event-card:hover .event-date {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.dot.active {
+    animation: pulse 2s infinite;
+}
+
+.next, .prev {
+    transition: all 0.3s ease;
+}
+
+.next:hover, .prev:hover {
+    transform: scale(1.1);
+}
+
+/* Scroll reveal animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation for cards */
+.hotel-grid .hotel-card:nth-child(1) { animation-delay: 0.1s; }
+.hotel-grid .hotel-card:nth-child(2) { animation-delay: 0.2s; }
+.hotel-grid .hotel-card:nth-child(3) { animation-delay: 0.3s; }
+.hotel-grid .hotel-card:nth-child(4) { animation-delay: 0.4s; }
+
+.offers-grid .offer-card:nth-child(1) { animation-delay: 0.1s; }
+.offers-grid .offer-card:nth-child(2) { animation-delay: 0.2s; }
+.offers-grid .offer-card:nth-child(3) { animation-delay: 0.3s; }
+.offers-grid .offer-card:nth-child(4) { animation-delay: 0.4s; }
+
+
