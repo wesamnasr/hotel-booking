@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فندقي</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>فندقي</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="#">الفنادق</a></li>
+                    <li><a href="#">العروض</a></li>
+                    <li><a href="#">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Search -->
+    <section class="hero">
+        <div class="container">
+            <h2>احجز فندقك المفضل بأفضل الأسعار</h2>
+            <p>أكثر من 10,000 فندق حول العالم بانتظارك</p>
+            
+        
+        </div>
+    </section>
+
+    <section class="search-bar container">
+            <div class="search-box">
+                <form>
+                    <div class="search-row">
+                        <div class="search-group">
+                            <label><i class="fas fa-map-marker-alt"></i> الوجهة</label>
+                            <input type="text" placeholder="المدينة أو اسم الفندق">
+                        </div>
+                        
+                        <div class="search-group">
+                            <label><i class="fas fa-calendar"></i> تاريخ الوصول</label>
+                            <input type="date">
+                        </div>
+                        
+                        <div class="search-group">
+                            <label><i class="fas fa-calendar"></i> تاريخ المغادرة</label>
+                            <input type="date">
+                        </div>
+                        
+                        <div class="search-group">
+                            <label><i class="fas fa-user"></i>  البالغين </label>
+                            <select>
+                                <option>1</option>
+                                <option>2 </option>
+                                <option>3</option>
+                                <option>4+</option>
+
+                            </select>
+                        </div>
+                        <div class="search-group" >
+                            <label><i class="fas fa-user"></i>  الاطفال </label>
+                            <select>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2 </option>
+                                <option>3</option>
+                                <option>4+</option>
+
+                            </select>
+
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary search-btn">
+                            <i class="fas fa-search"></i> بحث
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!-- Featured Hotels -->
+    <section class="featured-hotels">
+        <div class="container">
+            <h2 class="section-title">الفنادق المميزة</h2>
+            
+            <div class="hotel-grid">
+                <!-- Hotel Card 1 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/th.jpeg" alt="فندق الخليج">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>فندق الخليج</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> دبي، الإمارات</p>
+                        <p class="hotel-price">50 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- Hotel Card 2 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/download.webp" alt="فندق الريتز">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>فندق الريتز</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> الرياض، السعودية</p>
+                        <p class="hotel-price">60 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- Hotel Card 3 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/th (1).jpeg" alt="منتجع النخيل">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>منتجع النخيل</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> جدة، السعودية</p>
+                        <p class="hotel-price">100 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- Hotel Card 4 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/OIP (3).webp" alt="فندق القصر">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.6</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>فندق القصر</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> أبو ظبي، الإمارات</p>
+                        <p class="hotel-price">75 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- Hotel Card 5 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/OIP (4).webp" alt="منتجع الشاطئ">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.5</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>منتجع الشاطئ</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> شرم الشيخ، مصر</p>
+                        <p class="hotel-price">45 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+                
+                <!-- Hotel Card 6 -->
+                <div class="hotel-card">
+                    <div class="hotel-img">
+                        <img src="assets/images/OIP (6).webp" alt="فندق المدينة">
+                        <span class="hotel-rating"><i class="fas fa-star"></i> 4.4</span>
+                    </div>
+                    <div class="hotel-info">
+                        <h3>فندق المدينة</h3>
+                        <p class="hotel-location"><i class="fas fa-map-marker-alt"></i> المدينة المنورة، السعودية</p>
+                        <p class="hotel-price">80 ريال <span>/ الليلة</span></p>
+                        <a href="hotel-details.html" class="btn btn-outline btn-sm">عرض التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                <a href="#" class="btn btn-outline">عرض المزيد من الفنادق</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">عروض خاصة</h2>
+            
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-img">
+                        <img src="assets/images/OIP (1).webp" alt="عرض الصيف">
+                        <div class="offer-badge">خصم 25%</div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>عرض الصيف</h3>
+                        <p>استمتع بإقامة مميزة مع خصم 25% على الإقامات خلال فصل الصيف</p>
+                        <a href="#" class="btn btn-primary btn-sm">احجز الآن</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-img">
+                        <img src="assets/images/OIP (5).webp" alt="عطلة نهاية الأسبوع">
+                        <div class="offer-badge">خصم 15%</div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>عطلة نهاية الأسبوع</h3>
+                        <p>خصم 15% على حجوزات نهاية الأسبوع لمدة ليلتين أو أكثر</p>
+                        <a href="#" class="btn btn-primary btn-sm">احجز الآن</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-img">
+                        <img src="assets/images/th.webp" alt="عرض العائلة">
+                        <div class="offer-badge">خصم 20%</div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>عرض العائلة</h3>
+                        <p>خصم 20% للعائلات مع إفطار مجاني للأطفال دون سن 12 عامًا</p>
+                        <a href="#" class="btn btn-primary btn-sm">احجز الآن</a>
+                    </div>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-img">
+                        <img src="assets/images/OIP (3).webp" alt="الحجز المبكر">
+                        <div class="offer-badge">خصم 30%</div>
+                    </div>
+                    <div class="offer-info">
+                        <h3>الحجز المبكر</h3>
+                        <p>احصل على خصم 30% عند الحجز قبل 60 يومًا من موعد الإقامة</p>
+                        <a href="#" class="btn btn-primary btn-sm">احجز الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Events Section -->
+    <section class="events-section">
+        <div class="container">
+            <h2 class="section-title">الفعاليات والمناسبات</h2>
+            
+           
+            
+            <div class="events-slider">
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/images/OIP11.jpeg" alt="مهرجان الصيف">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">يوليو</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>مهرجان الصيف السنوي</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> فندق الخليج، دبي</p>
+                        <p class="event-desc">استمتع بأجواء صيفية مميزة مع عروض موسيقية وأنشطة ترفيهية للعائلة</p>
+                        <a href="#" class="btn btn-outline btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/images/OIP11.webp" alt="معرض السفر">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">أغسطس</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>معرض السفر والسياحة</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> مركز المعارض، الرياض</p>
+                        <p class="event-desc">اكتشف أحدث عروض السفر والوجهات السياحية مع خصومات حصرية للزوار</p>
+                        <a href="#" class="btn btn-outline btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/images/OIP (2).webp" alt="مؤتمر الضيافة">
+                        <div class="event-date">
+                            <span class="day">5</span>
+                            <span class="month">سبتمبر</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>مؤتمر الضيافة العربي</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> فندق الريتز، جدة</p>
+                        <p class="event-desc">تجمع لأهم الشخصيات في قطاع الضيافة والفنادق لمناقشة أحدث التطورات</p>
+                        <a href="#" class="btn btn-outline btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/images/OIP (1).jpeg" alt="مهرجان الطعام">
+                        <div class="event-date">
+                            <span class="day">12</span>
+                            <span class="month">أكتوبر</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>مهرجان الطعام العالمي</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> فندق القصر، أبو ظبي</p>
+                        <p class="event-desc">تذوق أشهى المأكولات من مختلف المطابخ العالمية مع عروض طهي حية</p>
+                        <a href="#" class="btn btn-outline btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-img">
+                        <img src="assets/images/OIP (5).webp" alt="حفل موسيقي">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">نوفمبر</span>
+                        </div>
+                    </div>
+                    <div class="event-info">
+                        <h3>أمسية موسيقية</h3>
+                        <p class="event-location"><i class="fas fa-map-marker-alt"></i> منتجع الشاطئ، شرم الشيخ</p>
+                        <p class="event-desc">استمتع بأمسية موسيقية مميزة على شاطئ البحر مع أشهر الفنانين</p>
+                        <a href="#" class="btn btn-outline btn-sm">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- People Says Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">آراء العملاء</h2>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p>تجربة رائعة مع فندقي! حجزت غرفة في فندق الخليج بدبي وكانت الخدمة ممتازة من البداية للنهاية. سأستخدم المنصة مرة أخرى بالتأكيد.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100" alt="أحمد محمد">
+                        <div class="author-info">
+                            <h4>أحمد محمد</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p>أسعار تنافسية وخيارات متنوعة من الفنادق. وجدت عرضاً مميز لإقامتي في الرياض بسعر أقل بكثير من المواقع الأخرى.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100" alt="سارة عبدالله">
+                        <div class="author-info">
+                            <h4>سارة عبدالله</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p>واجهة سهلة الاستخدام وخدمة عملاء ممتازة. واجهت مشكلة بسيطة في الحجز وتم حلها بسرعة من قبل فريق الدعم.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100" alt="خالد العمري">
+                        <div class="author-info">
+                            <h4>خالد العمري</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p>الحجز عبر فندقي كان تجربة سلسة ومريحة. أحببت خيار المقارنة بين الفنادق والتصفية حسب المرافق المتاحة.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100" alt="نورة الحربي">
+                        <div class="author-info">
+                            <h4>نورة الحربي</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-right quote-icon"></i>
+                        <p>العروض الحصرية على المنصة رائعة! وفرت أكثر من 30% على إقامتي الأخيرة في منتجع النخيل بجدة.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/100" alt="فهد السالم">
+                        <div class="author-info">
+                            <h4>فهد السالم</h4>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>فندقي</h3>
+                    <p>منصة حجز الفنادق الأولى في الشرق الأوسط</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">الفنادق</a></li>
+                        <li><a href="#">العروض</a></li>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>المساعدة</h3>
+                    <ul>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <p><i class="fas fa-phone"></i> +966 12 345 6789</p>
+                    <p><i class="fas fa-envelope"></i> info@fandaqi.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 فندقي. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
