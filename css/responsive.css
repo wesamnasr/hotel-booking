@@ -1,10 +1,3 @@
-/* التصميم الأساسي */
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-}
 
 /* للأجهزة الصغيرة (موبايل) */
 @media (max-width: 768px) {
