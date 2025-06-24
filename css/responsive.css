@@ -9,7 +9,9 @@
 /* للأجهزة الصغيرة (موبايل) */
 @media (max-width: 768px) {
   .container {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding: 10px;
   }
 
