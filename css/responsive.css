@@ -1,0 +1,31 @@
+/* للموبايلات */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.container {
+  width: 100%;
+  padding: 2vw;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 1 1 100%;
+}
+
+@media (min-width: 768px) {
+  .item {
+    flex: 1 1 45%;
+  }
+}
