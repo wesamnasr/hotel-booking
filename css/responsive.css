@@ -1,31 +1,25 @@
-/* للموبايلات */
+/* التصميم الأساسي */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* للأجهزة الصغيرة (موبايل) */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     padding: 10px;
   }
 
-  .navbar {
-    flex-direction: column;
-    text-align: center;
+  .box {
+    width: 100%;
+    margin-bottom: 10px;
   }
-}
-.container {
-  width: 100%;
-  padding: 2vw;
-}
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.item {
-  flex: 1 1 100%;
-}
-
-@media (min-width: 768px) {
-  .item {
-    flex: 1 1 45%;
+  nav {
+    font-size: 14px;
+    text-align: center;
   }
 }
